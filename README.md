@@ -1,6 +1,6 @@
 # Haitham's Portfolio
 
-![Portfolio Screenshot](./src/assets/screencapture-portfolio-mhkyu4qp6-haitham-mo-redas-projects-vercel-app-2025-03-25-02_22_58.png) <!-- Add a screenshot if available -->
+![Portfolio Screenshot](./src/assets/Full-Pic-Portoflio.png) <!-- Add a screenshot if available -->
 
 A modern, responsive portfolio website showcasing my projects, skills, and professional background.
 
