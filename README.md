@@ -63,10 +63,15 @@ To run this project locally:
    git clone https://github.com/your-username/portfolio.git
    ```
 2. Install dependencies:
-   ```npm install
+
+   ```bash
+   npm install
 
    ```
+
 3. Run the development server:
-   ```npm run dev
+
+   ```bash
+   npm run dev
 
    ```
