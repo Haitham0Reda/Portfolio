@@ -14,7 +14,6 @@ A modern, responsive portfolio website showcasing my projects, skills, and profe
 - **Project Showcase**: Highlighting key projects with descriptions and technologies used
 - **Skills Section**: Displaying technical competencies
 - **Contact Form**: Easy way for visitors to reach out
-- **Dark/Light Mode**: Toggleable theme preference
 - **Smooth Animations**: Enhanced user experience with subtle animations
 
 ## Technologies Used
@@ -25,5 +24,49 @@ A modern, responsive portfolio website showcasing my projects, skills, and profe
   - Framer Motion (animations)
 - **Deployment**:
   - Vercel (hosting)
+- **Packages**:
+  - Emailjs
+  - Toastify.js
 
 ## Project Structure
+
+portfolio/
+├── public/ # Static assets
+├── src/
+│ ├── assets/ # Images
+│ │ ├── Pic.jpg # Profile picture
+│ │ └── Full-Pic-Portoflio.png # Website screenshot
+│ ├── components/ # Reusable components
+│ │ ├── LandingScreen.jsx
+│ │ ├── MobileMenu.jsx
+│ │ ├── Navbar.jsx
+│ │ ├── RevealOnScroll.jsx
+│ │ ├── Skills.jsx
+│ │ └── Stars.jsx
+│ ├── components/sections/ # Main sections
+│ │ ├── Home.jsx
+│ │ ├── About.jsx
+│ │ ├── Project.jsx
+│ │ └── Contact.jsx
+│ └── ... # Other source files
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
+
+## Getting Started
+
+To run this project locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/portfolio.git
+   ```
+2. Install dependencies:
+   ```npm install
+
+   ```
+3. Run the development server:
+   ```npm run dev
+
+   ```
