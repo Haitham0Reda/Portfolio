@@ -8,14 +8,14 @@ const About = () => {
     // Function to generate random stars
     useEffect(() => {
         const generateStars = () => {
-            const starCount = 200; // Number of stars
+            const starCount = 200;
             const newStars = [];
 
             for (let i = 0; i < starCount; i++) {
-                const size = Math.random() * 6 + 1; // Random size between 1px and 4px
-                const left = Math.random() * 100; // Random horizontal position
-                const top = Math.random() * 100; // Random vertical position
-                const delay = Math.random() * 5; // Random animation delay
+                const size = Math.random() * 6 + 1;
+                const left = Math.random() * 100;
+                const top = Math.random() * 100;
+                const delay = Math.random() * 5;
 
                 newStars.push(
                     <div
@@ -39,14 +39,22 @@ const About = () => {
         generateStars();
     }, []);
 
+    // Format category names for display
+    const formatCategoryName = (category) => {
+        return category
+            .replace(/([A-Z])/g, ' $1')
+            .replace(/And/g, ' & ')
+            .trim();
+    };
+
     return (
         <section id="about" className="min-h-screen flex items-center justify-center py-20 relative overflow-hidden">
             {/* Stars Background */}
             <div className="absolute inset-0 z-0">
                 {stars}
             </div>
-            <RevealOnScroll>
 
+            <RevealOnScroll>
                 {/* Content */}
                 <div className="max-w-3xl mx-auto px-4 z-10">
                     <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
@@ -62,14 +70,14 @@ const About = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {Object.entries(Skills).map(([category, skills]) => (
                                 <div key={category} className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                                    <h3 className="text-xl font-bold mb-4">{category.replace(/([A-Z])/g, ' $1').trim()}</h3>
+                                    <h3 className="text-xl font-bold mb-4">{formatCategoryName(category)}</h3>
                                     <div className="flex flex-wrap gap-2">
                                         {skills.map((skill, index) => (
                                             <span
                                                 key={index}
                                                 className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
                                             >
-                                                {skill.skill}
+                                                {skill}
                                             </span>
                                         ))}
                                     </div>
@@ -101,7 +109,7 @@ const About = () => {
 
                                 <li className="relative pl-6">
                                     <div className="absolute left-0 top-2 w-2 h-2 bg-blue-500 rounded-full"></div>
-                                    <h4 className="font-semibold">Bachelor’s Degree - Faculty of Art Education, Helwan University (May 2012)</h4>
+                                    <h4 className="font-semibold">Bachelor's Degree - Faculty of Art Education, Helwan University (May 2012)</h4>
                                     <p>
                                         Graduated with a degree in Art Education, which laid the foundation for my creative and technical skills.
                                     </p>
