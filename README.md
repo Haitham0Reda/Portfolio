@@ -1,12 +1,29 @@
-# React + Vite
+# Haitham's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Screenshot](./src/assets/screencapture-portfolio-mhkyu4qp6-haitham-mo-redas-projects-vercel-app-2025-03-25-02_22_58.png) <!-- Add a screenshot if available -->
 
-Currently, two official plugins are available:
+A modern, responsive portfolio website showcasing my projects, skills, and professional background.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## Expanding the ESLint configuration
+👉 [View Live Portfolio](https://portfolio-mhkyu4qp6-haitham-mo-redas-projects.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- **Responsive Design**: Works on all device sizes
+- **Project Showcase**: Highlighting key projects with descriptions and technologies used
+- **Skills Section**: Displaying technical competencies
+- **Contact Form**: Easy way for visitors to reach out
+- **Dark/Light Mode**: Toggleable theme preference
+- **Smooth Animations**: Enhanced user experience with subtle animations
+
+## Technologies Used
+
+- **Frontend**:
+  - Vite.js (React framework)
+  - Tailwind CSS (styling)
+  - Framer Motion (animations)
+- **Deployment**:
+  - Vercel (hosting)
+
+## Project Structure
