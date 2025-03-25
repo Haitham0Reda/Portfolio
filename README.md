@@ -30,29 +30,26 @@ A modern, responsive portfolio website showcasing my projects, skills, and profe
 
 ## Project Structure
 
+```
 portfolio/
-├── public/ # Static assets
+├── public/
 ├── src/
-│ ├── assets/ # Images
-│ │ ├── Pic.jpg # Profile picture
-│ │ └── Full-Pic-Portoflio.png # Website screenshot
-│ ├── components/ # Reusable components
-│ │ ├── LandingScreen.jsx
-│ │ ├── MobileMenu.jsx
-│ │ ├── Navbar.jsx
-│ │ ├── RevealOnScroll.jsx
-│ │ ├── Skills.jsx
-│ │ └── Stars.jsx
-│ ├── components/sections/ # Main sections
-│ │ ├── Home.jsx
-│ │ ├── About.jsx
-│ │ ├── Project.jsx
-│ │ └── Contact.jsx
-│ └── ... # Other source files
+│   ├── assets/
+│   │   ├── Pic.jpg
+│   │   └── Full-Pic-Portfolio.png
+│   ├── components/
+│   │   ├── LandingScreen.jsx
+│   │   ├── Navbar.jsx
+│   │   └── ...
+│   ├── components/sections/
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   └── ...
+│   └── App.jsx
 ├── .gitignore
 ├── package.json
-├── package-lock.json
 └── README.md
+```
 
 ## Getting Started
 
